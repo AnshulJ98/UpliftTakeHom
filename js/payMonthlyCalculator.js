@@ -47,11 +47,10 @@ const submitAction = async () => {
         
       }
     });
-    console.log(response)
     const myJson = await response.json(); //extract JSON from the http response
     console.log(myJson)
 
-    
+
     //Just need to display this value as the per month amount
     console.log(myJson.offer.monthly_payment_amount/100)
     //
